@@ -1,0 +1,19 @@
+php_flag magic_quotes_gpc Off
+
+DirectoryIndex index.php
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /clevertech/
+
+# frontend
+RewriteRule ^(/)?$ /clevertech/frontend/www/index.php?r=site [L]
+
+#backend
+RewriteRule ^backend/?$ /clevertech/backend/www/index.php?r=site [L]
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# otherwise forward it to index.php
+RewriteRule . index.php

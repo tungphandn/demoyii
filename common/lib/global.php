@@ -303,8 +303,8 @@ function je($json, $opts=null)
  * @param string $json the PHP array to be decoded into json array
  * @param bool $assoc when true, returned objects will be converted into associative arrays.
  * @param int $depth User specified recursion depth.
- * @param int $opts Bitmask of JSON decode options. 
- *	Currently only JSON_BIGINT_AS_STRING is supported 
+ * @param int $opts Bitmask of JSON decode options.
+ *	Currently only JSON_BIGINT_AS_STRING is supported
  *	(default is to cast large integers as floats)
  */
 function jd($json, $assoc=null, $depth=512, $opts=0)
@@ -317,7 +317,7 @@ function jd($json, $assoc=null, $depth=512, $opts=0)
  * @param string $txt the text to cut
  * @param integer $length the length
  * @param string $encoding the encoding type if multibyte, null otherwise
- * @return string 
+ * @return string
  */
 function trail($txt, $length, $encoding = 'utf-8')
 {
@@ -346,9 +346,9 @@ function trail($txt, $length, $encoding = 'utf-8')
  * This code is freeware provided these six comment lines remain intact
  * A wizard to generate this code is at http://www.jottings.com/obfuscator/
  * The PHP code may be obtained from http://www.celticproductions.net/\n\n";
- * 
+ *
  * @param string $address the email address to obfuscate
- * @return string 
+ * @return string
  */
 function obfuscateEmail($address)
 {

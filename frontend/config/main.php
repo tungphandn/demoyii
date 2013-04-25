@@ -34,7 +34,7 @@ return CMap::mergeArray(
 		'params' => $params,
 		// preload components required before running applications
 		// @see http://www.yiiframework.com/doc/api/1.1/CModule#preload-detail
-		'preload' => array('log'),
+		'preload' => array('bootstrap','log'),
 		// @see http://www.yiiframework.com/doc/api/1.1/CApplication#language-detail
 		'language' => 'en',
 		// uncomment if a theme is used
@@ -62,20 +62,24 @@ return CMap::mergeArray(
 				// @see http://www.yiiframework.com/doc/api/1.1/CErrorHandler#errorAction-detail
 				'errorAction'=>'site/error'
 			),
-//			'db' => array(
-//				'connectionString' => $params['db.connectionString'],
-//				'username' => $params['db.username'],
-//				'password' => $params['db.password'],
-//				'schemaCachingDuration' => YII_DEBUG ? 0 : 86400000, // 1000 days
-//				'enableParamLogging' => YII_DEBUG,
-//				'charset' => 'utf8'
-//			),
+			'db' => array(
+				'connectionString' => $params['db.connectionString'],
+				'username' => $params['db.username'],
+				'password' => $params['db.password'],
+				'schemaCachingDuration' => YII_DEBUG ? 0 : 86400000, // 1000 days
+				'enableParamLogging' => YII_DEBUG,
+				'charset' => 'utf8'
+			),
 			'urlManager' => array(
 				'urlFormat' => 'path',
 				'showScriptName' => false,
 				'urlSuffix' => '/',
 				'rules' => $params['url.rules']
 			),
+			'bootstrap' => array(
+				'class' => 'common.extensions.bootstrap.components.Bootstrap',
+				'responsiveCss' => true,
+				),
 			/* make sure you have your cache set correctly before uncommenting */
 			/* 'cache' => $params['cache.core'], */
 			/* 'contentCache' => $params['cache.content'] */

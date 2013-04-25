@@ -25,15 +25,15 @@
 return array(
 	'env.code' => 'private',
 	// DB connection configurations
-//	'db.name' => '',
-//	'db.connectionString' => 'mysql:host={DATABASE-HOST};dbname={DATABASE-NAME}',
-//	'db.username' => '{DATABASE-USERNAME}',
-//	'db.password' => '{DATABASE-PASSWORD}',
+	'db.name' => '',
+	'db.connectionString' => 'mysql:host=localhost;dbname=clevertech',
+	'db.username' => 'root',
+	'db.password' => 'root',
 //
 //	// test database {
-//	'testdb.name' => '',
-//	'testdb.connectionString' => 'mysql:host={DATABASE-HOST};dbname={DATABASE-NAME}_test',
-//	'testdb.username' => '{DATABASE-USERNAME}',
-//	'testdb.password' => '{DATABASE-PASSWORD}',
+	'testdb.name' => '',
+	'testdb.connectionString' => 'mysql:host=localhost;dbname=clevertech_test',
+	'testdb.username' => 'root',
+	'testdb.password' => 'root',
 
 );
