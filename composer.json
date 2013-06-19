@@ -17,10 +17,35 @@
           "reference": "Branch Master"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mantel/portlet",
+        "version": "1.0.0",
+        "dist": {
+          "url": "http://www.yiiframework.com/extension/portlet/files/portlet-1.0.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "version": "1.1.1",
+        "name": "mantel/facebook",
+        "source": {
+          "url": "https://github.com/facebook/facebook-php-sdk.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.3.0",
-    "mantel/giix": "1.0.0"
+    "mantel/giix": "1.0.0",
+    "mantel/portlet": "1.0.0",
+    "mantel/facebook": "1.1.1"
   }
 }
