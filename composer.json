@@ -9,7 +9,7 @@
             "version": "1.0.0",
             "dist": {
               "url":"http://www.yiiframework.com/extension/giix/files/giix-1.9.1.tgz",
-              "type":"zip"
+              "type":"tgz"
             },
             "source": {
               "url": "https://github.com/rcoelho/giix.git",
