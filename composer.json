@@ -1,7 +1,19 @@
 {
     "name": "tungphan/yii-demo",
+    "description": "A great way to start building your web application with Yii PHP framework.",
+    "repositories": [{
+         "type": "package",
+      "package": {
+        "name": "mantel/giix",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/rcoelho/giix.git",
+          "type": "git"
+        }
+      }
+    }],
     "require": {
         "php": ">=5.3.0",
-        "another-vendor/package": "1.*"
+        "mantel/giix":"1.0"
     }
 }
